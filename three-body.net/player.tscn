@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cw7ids15hp5hx"]
+
+[ext_resource type="Texture2D" uid="uid://d30h7iaotsafq" path="res://wang_miao-removebg-preview.png" id="1_4flbx"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_onrkg"]
+radius = 87.0
+height = 262.0
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, 3)
+shape = SubResource("CapsuleShape2D_onrkg")
